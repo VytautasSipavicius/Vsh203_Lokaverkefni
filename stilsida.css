@@ -391,10 +391,26 @@ body {
 	font-family: 'VT323', monospace;
 	background-color: black;
 	color: white;
-
 } 
-h1{
+
+h2{
 	font-family:'Orbitron', sans-serif;
+}
+section{
+	display: flex;
+	flex-flow: row;
+}
+article{
+	width: 60%;
+	text-align: center;
+}
+aside{
+	background-color: #1FDEDB;
+	width: 20%
+}
+.skraning{
+	color: #FFEE00;
+	text-align: center;
 }
 h2{
 	font-family:'Orbitron', sans-serif;
@@ -409,14 +425,11 @@ h3{
 
 }
 @media screen and (min-width: 60em) {
-	body{
-		max-width: 60em;
-		margin: auto;
-	}
+
 }
 @media screen and (min-width: 80em) {
 	body{
-		width: 60em;
+		max-width: 60em;
 		margin: auto;
 	}
 }
