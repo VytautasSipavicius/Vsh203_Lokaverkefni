@@ -1,41 +1,119 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta charset="utf-8">
-	<style>
-		@import url('https://fonts.googleapis.com/css?family=Orbitron|VT323');
-	</style>
-	<link rel="stylesheet" href="stilsida.css">
-	<title>HR-ingurinn</title>
+	<title>Verkefni 1</title>
 </head>
 <body>
-<header>
-	<picture>
-		<img src="Myndir/Logo.jpg">
-	</picture>
-	<nav>
-		<a href="#">Heim</a>
-		<a href="#">Um HRinginn</a>
-		<a href="#">Vinningar</a>
-		<a href="#">Skráning</a>
-	</nav>
-</header>
-<section>
-	<aside>
-		<H2 class="skraning"> Skráning er hafinn! </H2>
-	</aside>
-	<article>
-		<H1> HRingurinn 2017</H1>
-		<p> Hringurinn er stærsta lan mót landsins og oft talað um að þetta sé íslandsmeistara keppni í þeim leikjum sem er spilaðir. 
-			Hringurinn er haldinn árlega í Háskólanum í Reykjavík en það er spilað á annarri og þriðju hæð fyrir ofan aðal inganginn. Hann hefur undandarið verið haldinn aðra helgina í ágúst en með því er reynt að forðast það að hafa þetta sömu helgi og verslunarmannahelginn er. 
-			Viðburðurinn er í umsjón Tvíundar sem er félag tölunvarfræðinema, stærðfræðinema og hugbúnaðarverkfræðinema við Háskólann í Reykjavík. 
-			Þetta er tíunda árið í röð sem Hringurinn er haldinn
-		</p>
-	</article>
-	<aside>
-	</aside>
-</section>
-<footer></footer>
+<div>
+	<table>
+		<caption>Vinningar</caption>
+		<thead>
+			<tr>
+				<th scope="col">Leikur:</th>
+				<th scope="col">CS:GO</th>
+				<th scope="col">LoL</th>
+				<th scope="col">Hearthstone</th>
+				<th scope="col">Rocket league</th>
+				<th scope="col">Overwatch</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td>1. Sæti</td>s
+				<td>
+				100.000 kr<br>
+				100.000 kr hjá Tölvutek</td>
+				<td>
+				75.000 kr<br>
+				50.000 kr hjá Tölvutek</td>
+				<td>
+				25.000 kr<br>
+				25.000 kr hjá Tölvutek</td>
+				<td>
+				50.000 kr<br>
+				50.000 kr hjá Tölvutek</td>
+				<td>
+				50.000 kr<br>
+				50.000 kr hjá Tölvutek</td>
+			</tr>
+			<tr>
+				<td>2. Sæti</td>
+				<td>
+				40.000 kr<br>
+				40.000 kr hjá Tölvutek</td>
+				<td>
+				35.000 kr<br>
+				20.000 kr hjá Tölvutek</td>
+				<td>
+				10.000 kr<br>
+				10.000 kr hjá Tölvutek</td>
+				<td>
+				20.000 kr<br>
+				10.000 kr hjá Tölvutek</td>
+				<td>
+				20.000 kr<br>
+				20.000 kr hjá Tölvutek</td>
+			</tr>
+			<tr>
+				<td>3. Sæti</td>
+				<td>Mountain Dew<br>
+				og Gjafabréf á<br>
+				Dominos</td>
+				<td>Mountain Dew<br>
+				og Gjafabréf á<br>
+				Dominos</td>
+				<td>Mountain Dew<br>
+				og Gjafabréf á<br>
+				Dominos</td>
+				<td>Mountain Dew<br>
+				og Gjafabréf á<br>
+				Dominos</td>
+				<td>Mountain Dew<br>
+				og Gjafabréf á<br>
+				Dominos</td>
+			</tr>
+		</tbody>
+	</table>
+	<form>
+		<fieldset>
+			<legend>Skráning</legend>
+				<label for="username">
+				Lið
+				<input type="text" required name="username" title="Sláðu inn nafn">
+				</label>
+
+				<label for="comment">
+				Meðlimir
+				<textarea name="comment">Nöfn og notendanöfn hér</textarea>
+				</label>
+
+				<label for="number" required>
+				Símanúmer
+				<input type="text" required name="number" title="Sláðu inn símanúmer">
+				</label>
+
+				<label for="email">
+				Tölvupóstur
+				<input type="email" name="email" required title="Sláðu inn tölvupóst" placeholder="name@domain.com">
+				</label>
+
+				<label for="amount">
+				Leikur
+				<select>
+					<option value="1">Counter Strike:GO</option>
+					<option value="2">League of Legends</option>
+					<option value="3">Hearthstone</option>
+					<option value="4">Rocket League</option>
+					<option value="5">Overwatch</option>
+				</select>
+				</label>
+		
+				<label for="comment">
+				<input type="submit" required name="submit" value="Skrá Lið">
+				</label>
+		</fieldset>
+	</form>
+</div>
 </body>
 </html>
