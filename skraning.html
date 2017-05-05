@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta charset="utf-8">
+	<style>
+		@import url('https://fonts.googleapis.com/css?family=Audiowide|Monoton');
+	</style>
+	<link rel="stylesheet" href="stilsida.css">
+	<title>HR-ingurinn</title>
+</head>
+<body>
+<header>
+	<picture>
+		<img src="Myndir/Logo.jpg">
+	</picture>
+</header>
+<nav>
+	<input class="topinput" type="checkbox" id="toggle">
+	<label class="toplabel" for="toggle">&#9776;Menu</label>
+	<ul class="topmenu">
+		<li>
+			<a href="http://tsuts.tskoli.is/2t/2601994049/verkefni2.1/index.html" title="verkefni 2.1">Verkefni 2.1</a>
+		</li>
+		<li>
+			<a href="http://tsuts.tskoli.is/2t/2601994049/verkefni2.2/index.html" title="verkefni 2.2">Verkefni 2.2</a>
+		</li>
+		<li>
+			<a href="http://tsuts.tskoli.is/2t/2601994049/verkefni3.1/index.html" title="verkefni 3.1">Verkefni 3.1</a>
+		</li>
+	</ul>
+</nav>
+<div class="divbakgrunn">
+	<form>
+		<fieldset>
+			<legend>Skráning</legend>
+				<label for="amount">
+				Leikur
+				<select>
+					<option value="1">Counter Strike:GO</option>
+					<option value="2">League of Legends</option>
+					<option value="3">Hearthstone</option>
+					<option value="4">Rocket League</option>
+					<option value="5">Overwatch</option>
+				</select>
+				</label>
+				
+				<label  for="username">
+				Lið
+				<input type="text" required name="username" title="Sláðu inn nafn">
+				</label>
+
+				<label for="comment">
+				Meðlimir
+				<textarea name="comment">Nöfn og notendanöfn hér</textarea>
+				</label>
+
+				<label for="number" required>
+				Símanúmer
+				<input type="text" required name="number" title="Sláðu inn símanúmer">
+				</label>
+
+				<label for="email">
+				Tölvupóstur
+				<input type="email" name="email" required title="Sláðu inn tölvupóst" placeholder="name@domain.com">
+				</label>
+
+		
+				<label for="comment">
+				<input type="submit" required name="submit" value="Skrá Lið">
+				</label>
+		</fieldset>
+	</form>
+</div>
+<footer></footer>
+</body>
+</html>
