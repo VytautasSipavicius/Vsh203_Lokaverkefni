@@ -409,10 +409,104 @@ aside{
 	color: #003F70;
 	text-align: center;
 }
+input {
+  display: none; }
+  input:checked ~ .topmenu {
+    position: fixed;
+    bottom: 2.6em;
+    left: 0;
+    z-index: 990;
+    transition: all 0.4s ease; }
+  input:checked + label {
+    border: 2px solid #4286f4;
+    color: #fff; }
+
+label {
+  padding-bottom: 0.2em;
+  padding-top: 0.2em;
+  background: #160000;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  border: 3px outset #ff993a;
+  color: #fff;
+  cursor: pointer;
+  font-size: 1.5em;
+  text-align: center;
+  transition: all .2s ease;
+  z-index: 999; }
+
+.topmenu {
+  display: block;
+  position: fixed;
+  bottom: -15em;
+  left: 0;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  z-index: 990;
+  transition: all 1s ease; }
+  .topmenu li {
+    padding: 0;
+    margin: 0;
+    border: 0;
+    border-bottom: 1px solid #4286f4; }
+  .topmenu a {
+    text-decoration: none;
+    color: #fff;
+    background-color: #160000;
+    display: block;
+    text-align: center;
+    padding: 0.4em 2em;
+    border-left: 2px solid #4286f4;
+    border-right: 2px solid #4286f4;
+    border-top: 2px solid #4286f4; }
+  .topmenu:hover, .topmenu:active, .topmenu:focus {
+    background-color: #4286f4;
+    transition: all 0.5s ease; }
+  .topmenu:first-child {
+    border-top: 2px solid #4286f4; }
+
 @media screen and (min-width: 37.5em) {
 
 }
 @media screen and (min-width: 48em) {
+  label {
+    display: none; }
+
+  input {
+    display: none; }
+
+  .topmenu {
+    position: relative;
+    top: 0;
+    width: 100%;
+    height: 3em;
+    left: auto;
+    right: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background-color: #160000;
+    transition: none;
+    padding: 0;
+    margin: 0;
+    list-style: none; }
+    .topmenu li {
+      padding: 0;
+      margin: 0; }
+    .topmenu a {
+      text-decoration: none;
+      color: #fff;
+      background-color: #160000;
+      display: block;
+      border: 2px solid #7d2ecc;
+      padding: 1em;
+      height: 3em; }
+    .topmenu:last-child {
+      border: 2px solid #7d2ecc; } }
 
 }
 @media screen and (min-width: 60em) {
@@ -430,6 +524,41 @@ nav a{
   font-size: 1.3em;
 }
 }
+  label {
+    display: none; }
+
+  input {
+    display: none; }
+
+  .topmenu {
+    position: relative;
+    top: 0;
+    width: 100%;
+    height: 3em;
+    left: auto;
+    right: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background-color: #160000;
+    transition: none;
+    padding: 0;
+    margin: 0;
+    list-style: none; }
+    .topmenu li {
+      padding: 0;
+      margin: 0; }
+    .topmenu a {
+      text-decoration: none;
+      color: #fff;
+      background-color: #160000;
+      display: block;
+      border: 2px solid #7d2ecc;
+      padding: 1em;
+      height: 3em; }
+    .topmenu:last-child {
+      border: 2px solid #7d2ecc; }
+
 @media screen and (min-width: 80em) {
 	body{
 		max-width: 60em;
