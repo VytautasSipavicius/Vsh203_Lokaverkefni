@@ -387,6 +387,8 @@ h1{
 }
 h2{
   font-family: 'Monoton', cursive;
+  color: #003F70;
+  text-align: center;
 }
 section{
   display: flex;
@@ -404,13 +406,9 @@ aside{
   background-color: #1FDEDB;
   order: 3;
 }
-.auglysing{
-  padding: 0px;
+.slideshow{
   order: 2;
-}
-.skraning{
-  color: #003F70;
-  text-align: center;
+  padding: 1em;
 }
 .topinput {
   display: none; }
@@ -533,13 +531,34 @@ th{
   padding-bottom: 15px;
   overflow: auto;
 }
+.slideshowbox{
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  height: 13em;
+}
+.slideshowbox img{
+  position: relative;
+  max-width: 100%;
+  bottom: 0em;
+  animation-name: slide;
+  animation-duration: 20s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+}
+@keyframes slide{
+  0% {opacity: 0; bottom: : 0em;}
+  10% {opacity: 1; bottom: : 0em;}
+  90% {opacity: 1; bottom: 45em;}
+  100% {opacity: 0; bottom: 45em;}
+}
 @font-face {
   font-family: 'icomoon';
-  src:  url('fonts/icomoon.eot?6vnrdz');
-  src:  url('fonts/icomoon.eot?6vnrdz#iefix') format('embedded-opentype'),
-    url('fonts/icomoon.ttf?6vnrdz') format('truetype'),
-    url('fonts/icomoon.woff?6vnrdz') format('woff'),
-    url('fonts/icomoon.svg?6vnrdz#icomoon') format('svg');
+  src:  url('fonts/icomoon.eot?jzintz');
+  src:  url('fonts/icomoon.eot?jzintz#iefix') format('embedded-opentype'),
+    url('fonts/icomoon.ttf?jzintz') format('truetype'),
+    url('fonts/icomoon.woff?jzintz') format('woff'),
+    url('fonts/icomoon.svg?jzintz#icomoon') format('svg');
   font-weight: normal;
   font-style: normal;
 }
@@ -559,14 +578,11 @@ th{
   -moz-osx-font-smoothing: grayscale;
 }
 
-.icon-home:before {
-  content: "\e900";
+.icon-home3:before {
+  content: "\e902";
 }
 .icon-pencil:before {
   content: "\e905";
-}
-.icon-file-text:before {
-  content: "\e922";
 }
 .icon-trophy:before {
   content: "\e99e";
@@ -580,18 +596,6 @@ th{
 .icon-twitter:before {
   content: "\ea96";
 }
-.icon-youtube:before {
-  content: "\ea9d";
-}
-.box {
-  display: flex;
-  flex-flow: row;
-  position: relative;
-  text-align: center; }
-  .box div {
-    position: relative;
-    width: 3em;
-    height: 3em; }
 @media screen and (min-width: 37.5em) {
   section{
     flex-flow: row;
@@ -604,11 +608,17 @@ th{
     width: 25%;
     order: 1;
   }
-  .auglysing{
+  .slideshow{
     order: 3;
   }
 }
 @media screen and (min-width: 48em) {
+  @keyframes slide{
+  0% {opacity: 0; bottom: : 0em;}
+  10% {opacity: 1; bottom: : 0em;}
+  90% {opacity: 1; bottom: 30em;}
+  100% {opacity: 0; bottom: 30em;}
+  }
   form{
   margin-right:25%;
   margin-left: 25%;
@@ -651,11 +661,6 @@ th{
 
 }
 @media screen and (min-width: 60em) {
-  .box {
-    flex-flow: column;
-    position: fixed;
-    left: 0em;
-    top: 2em; } 
   .toplabel {
     display: none; }
 
